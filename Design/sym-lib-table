@@ -1,6 +1,6 @@
 (sym_lib_table
   (lib (name Device)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Device.lib)(options "")(descr ""))
-  (lib (name Maxim-Integrated)(type Legacy)(uri C:/Users/asus/Desktop/PS-DC-3V3-2A/Components/Library/Maxim-Integrated.lib)(options "")(descr ""))
   (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr ""))
   (lib (name Connector_Generic)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Connector_Generic.lib)(options "")(descr ""))
+  (lib (name Maxim-Integrated)(type Legacy)(uri ${PROJ_REPO}/PS-DC-3V3-2A/Components/Library/Maxim-Integrated.lib)(options "")(descr ""))
 )
