@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX17643
+D 4.5V–60V, 2A, High-Efficiency, synchronous Step-Down DC-DC Converter with internal Compensation
+K DC-DC converer, Maxim-Integrated
+F C:\Users\asus\Desktop\PS-DC-3V3-2A\Datasheet\Maxim-Integrated\DTS_MAX17643_Rev0.pdf
+$ENDCMP
+#
+#End Doc Library
