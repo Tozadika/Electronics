@@ -1,0 +1,17 @@
+### Module positions - created on 04/13/21 21:45:55 ###
+### Printed by Pcbnew version kicad (5.1.9)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val       Package                                     PosX       PosY       Rot  Side
+C1        5.6n      C_0603_1608Metric                       144.7800  -100.3300  180.0000  top
+C2        4.7u      C_0805_2012Metric                       144.6530  -102.2350  180.0000  top
+C3        0.1u      C_0603_1608Metric                       152.4000  -101.6000    0.0000  top
+C4        47u       C_1210_3225Metric                       158.2420   -96.5200   90.0000  top
+C5        2.2u      C_1210_3225Metric                       144.7800   -96.7740  270.0000  top
+L1        6.8u      L_Coilcraft_XAL5050-682                 153.6700   -97.7900   90.0000  top
+R1        40.2k     R_0603_1608Metric                       147.3200  -103.6320  270.0000  top
+R2        52.3k     R_0603_1608Metric                       155.7020  -101.6000  180.0000  top
+R3        19.6k     R_0603_1608Metric                       150.1140  -103.6320  270.0000  top
+R4        40.2k     R_0603_1608Metric                       156.4640  -104.1400   90.0000  top
+U1        MAX17643  DFN-12-1EP_3x3mm_P0.5mm_EP2.05x2.86mm   148.5900  -100.0760    0.0000  top
+## End
