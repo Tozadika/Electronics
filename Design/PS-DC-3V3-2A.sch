@@ -483,7 +483,7 @@ L Connector_Generic:Conn_01x06 J2
 U 1 1 607AE9BC
 P 1600 3300
 F 0 "J2" H 1800 3250 50  0000 C CNN
-F 1 "Conn_01x04" H 1550 2900 50  0000 C CNN
+F 1 "Conn_01x06" H 1550 2900 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 1600 3300 50  0001 C CNN
 F 3 "~" H 1600 3300 50  0001 C CNN
 F 4 "Header mâle, Carte-à-carte, 1.27 mm, 1 Rangée(s), 6 Contact(s), Traversant, droit, BD020 Series" H 1600 3300 50  0001 C CNN "Description"
