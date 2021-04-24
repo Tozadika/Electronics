@@ -1,19 +1,20 @@
-Source:;C:\Users\asus\Documents\Eletronique\PS-DC-3V3-2A\Design\PS-DC-3V3-2A.sch;;;;;;;;
-Date:;13/04/2021 21:48;;;;;;;;
-Tool:;Eeschema (5.1.9)-1;;;;;;;;
-Generator:;C:\Program Files\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value.py;;;;;;;;
-Component Count:;13;;;;;;;;
-;;;;;;;;;
-Item;Qty;Reference(s);Value;LibPart;Footprint;Description;Link;MPN;Manufacturer
-1;1;C1;5.6n;Device:C_Small;Capacitor_SMD:C_0603_1608Metric;Condensateur céramique multicouche CMS, 5600 pF, 10 V, 0603 [1608 Metric], ± 5%, X7R;https://fr.farnell.com/kemet/c0603c562j8ractu/condensateur-5600pf-10v-mlcc-0603/dp/2941954;C0603C562J8RACTU;Kemet
-2;1;C2;4.7u;Device:C_Small;Capacitor_SMD:C_0805_2012Metric;Condensateur céramique multicouche CMS, 4.7 µF, 10 V, 0805 [2012 Metric], ± 10%, X7R, Série C;https://fr.farnell.com/tdk/c2012x7r1a475k125ac/condensateur-4-7-f-10v-10-x7r/dp/2346936;C2012X7R1A475K125AC;TDK
-3;1;C3;0.1u;Device:C_Small;Capacitor_SMD:C_0603_1608Metric;Condensateur céramique multicouche CMS, 0.1 µF, 25 V, 0603 [1608 Metric], ± 10%, X8R, GCM Series;https://fr.farnell.com/murata/gcm188r91e104ka37d/cap-aec-q200-0-1uf-25v-mlcc-0603/dp/3581589;GCM188R91E104KA37D;Murata
-4;1;C4;47u;Device:C_Small;Capacitor_SMD:C_1210_3225Metric;Condensateur céramique multicouche CMS, 47 µF, 6.3 V, 1210 [3225 Metric], ± 10%, X7R, GCM Series;https://fr.farnell.com/murata/gcm32er70j476ke19l/condensateur-47-f-6-3v-10-x7r/dp/2688490;GCM32ER70J476KE19L;Murata
-5;1;C5;2.2u;Device:C_Small;Capacitor_SMD:C_1210_3225Metric;Condensateur céramique multicouche CMS, 2.2 µF, 100 V, 1210 [3225 Metric], ± 10%, X7R;https://fr.farnell.com/kemet/c1210c225k1ractu/cond-2-2-f-100v-10-x7r-1210/dp/1793832;C1210C225K1RACTU;Kemet
-6;1;J1;Conn_01x02;Connector_Generic:Conn_01x02;TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal;Bornier fil-à-carte, 2.54 mm, 2 Voies, 30 AWG, 16 AWG, 1.4 mm², Par vis;https://fr.farnell.com/buchanan-te-connectivity/282834-2/terminal-block-pcb-30-16awg-2/dp/2112482;282834-2;TE-Connectivity
-7;1;J2;Conn_01x04;Connector_Generic:Conn_01x06;Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical;Header mâle, Carte-à-carte, 1.27 mm, 1 Rangée(s), 6 Contact(s), Traversant, droit, BD020 Series;https://fr.farnell.com/gct-global-connector-technology/bd020-06-a-j-0350-0300-l-g/connecteur-header-6-voies-1-rang/dp/2751422;BD020-06-A-J-0350-0300-L-G;GCT
-8;1;L1;6.8u;Device:L;Coilcraft_inductor_SMD:L_Coilcraft_XAL5050-682;Inductance de puissance (CMS), 6.8 µH, 6.4 A, Blindé, 6 A, Série XAL5050, 5.48mm x 5.28mm x 5.1mm;https://fr.farnell.com/coilcraft/xal5050-682mec/inductance-6-8uh-6-4a-20-pwr-21mhz/dp/2289071;XAL5050-682MEC;Coilcraft
-9;2;R1, R4;40.2k;Device:R;Resistor_SMD:R_0603_1608Metric;Résistance à puce CMS, Couche épaisse, 40.2 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Couche épaisse;https://fr.farnell.com/panasonic/erj3ekf4022v/res-couche-epaisse-40-2k-1-0-1w/dp/2059463;ERJ3EKF4022V;Panasonic
-10;1;R2;52.3k;Device:R;Resistor_SMD:R_0603_1608Metric;Résistance à puce CMS, Couche mince, 52.3 kohm, ± 0.1%, 100 mW, 0603 [1608 Metric];https://fr.farnell.com/panasonic/era3arb5232v/res-52-3k-0-1-0-1w-0603-film-metal/dp/2094621;ERA3ARB5232V;Panasonic
-11;1;R3;19.6k;Device:R;Resistor_SMD:R_0603_1608Metric;Résistance à puce CMS, Couche mince, 19.6 kohm, ± 0.1%, 100 mW, 0603 [1608 Metric];https://fr.farnell.com/panasonic/era3arb1962v/res-19-6k-0-1-0-1w-0603-film-metal/dp/2094532;ERA3ARB1962V;Panasonic
-12;1;U1;MAX17643;Maxim-Integrated:MAX17643;Package_DFN_QFN:DFN-12-1EP_3x3mm_P0.5mm_EP2.05x2.86mm;DC/DC POL Converter, Adjustable, Synchronous Buck, 4.5 V to 60 V in, 0.9-54V out, TDFN-EP, 12Pin;https://fr.farnell.com/maxim-integrated-products/max17643atc/conv-dc-dc-sync-buck-2-2mhz-125/dp/3653247;MAX17643ATC+;Maxim-Integrated
+"Source:,""C:\Users\asus\Documents\Eletronique\PS-DC-3V3-2A\Design\PS-DC-3V3-2A.sch""";;;;;;;
+"Date:,""24/04/2021 13:31:42""";;;;;;;
+"Tool:,""Eeschema (5.1.9)-1""";;;;;;;
+"Generator:,""C:\Program Files\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value.py""";;;;;;;
+"Component Count:,""13""";;;;;;;
+;;;;;;;
+Item;Qty;Reference(s);Value;Description;Link;MPN;Manufacturer
+1;1;C1;5.6n;Condensateur céramique multicouche CMS, 5600 pF, 10 V, 0603 [1608 Metric], ± 5%, X7R;https://fr.farnell.com/kemet/c0603c562j8ractu/condensateur-5600pf-10v-mlcc-0603/dp/2941954;C0603C562J8RACTU;Kemet
+2;1;C2;4.7u;Condensateur céramique multicouche CMS, 4.7 µF, 10 V, 0805 [2012 Metric], ± 10%, X7R, Série C;https://fr.farnell.com/tdk/c2012x7r1a475k125ac/condensateur-4-7-f-10v-10-x7r/dp/2346936;C2012X7R1A475K125AC;TDK
+3;1;C3;0.1u;Condensateur céramique multicouche CMS, 0.1 µF, 25 V, 0603 [1608 Metric], ± 10%, X8R, GCM Series;https://fr.farnell.com/murata/gcm188r91e104ka37d/cap-aec-q200-0-1uf-25v-mlcc-0603/dp/3581589;GCM188R91E104KA37D;Murata
+4;1;C4;47u;Condensateur céramique multicouche CMS, 47 µF, 6.3 V, 1210 [3225 Metric], ± 10%, X7R, GCM Series;https://fr.farnell.com/murata/gcm32er70j476ke19l/condensateur-47-f-6-3v-10-x7r/dp/2688490;GCM32ER70J476KE19L;Murata
+5;1;C5;2.2u;Condensateur céramique multicouche CMS, 2.2 µF, 100 V, 1210 [3225 Metric], ± 10%, X7R;https://fr.farnell.com/kemet/c1210c225k1ractu/cond-2-2-f-100v-10-x7r-1210/dp/1793832;C1210C225K1RACTU;Kemet
+6;1;J1;Conn_01x02;Bornier fil-à-carte, 2.54 mm, 2 Voies, 30 AWG, 16 AWG, 1.4 mm², Par vis;https://fr.farnell.com/buchanan-te-connectivity/282834-2/terminal-block-pcb-30-16awg-2/dp/2112482;282834-2;TE-Connectivity
+7;1;J2;Conn_01x06;Header mâle, Carte-à-carte, 1.27 mm, 1 Rangée(s), 6 Contact(s), Traversant, droit, BD020 Series;https://fr.farnell.com/gct-global-connector-technology/bd020-06-a-j-0350-0300-l-g/connecteur-header-6-voies-1-rang/dp/2751422;BD020-06-A-J-0350-0300-L-G;GCT
+8;1;L1;6.8u;Inductance de puissance (CMS), 6.8 µH, 6.4 A, Blindé, 6 A, Série XAL5050, 5.48mm x 5.28mm x 5.1mm;https://fr.farnell.com/coilcraft/xal5050-682mec/inductance-6-8uh-6-4a-20-pwr-21mhz/dp/2289071;XAL5050-682MEC;Coilcraft
+9;1;R1;40.2k;Résistance à puce CMS, Couche épaisse, 40.2 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Couche épaisse;https://fr.farnell.com/panasonic/erj3ekf4022v/res-couche-epaisse-40-2k-1-0-1w/dp/2059463;ERJ3EKF4022V;Panasonic
+10;1;R2;52.3k;Résistance à puce CMS, Couche mince, 52.3 kohm, ± 0.1%, 100 mW, 0603 [1608 Metric];https://fr.farnell.com/panasonic/era3arb5232v/res-52-3k-0-1-0-1w-0603-film-metal/dp/2094621;ERA3ARB5232V;Panasonic
+11;1;R3;19.6k;Résistance à puce CMS, Couche mince, 19.6 kohm, ± 0.1%, 100 mW, 0603 [1608 Metric];https://fr.farnell.com/panasonic/era3arb1962v/res-19-6k-0-1-0-1w-0603-film-metal/dp/2094532;ERA3ARB1962V;Panasonic
+12;1;R4;10k;Résistance à puce CMS, Couche épaisse, 10 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Couche épaisse;https://fr.farnell.com/panasonic/erj3ekf1002v/res-couche-epaisse-10k-1-0-1w/dp/2303192;ERJ3EKF1002V;Panasonic
+13;1;U1;MAX17643;DC/DC POL Converter, Adjustable, Synchronous Buck, 4.5 V to 60 V in, 0.9-54V out, TDFN-EP, 12Pin;https://fr.farnell.com/maxim-integrated-products/max17643atc/conv-dc-dc-sync-buck-2-2mhz-125/dp/3653247;MAX17643ATC+;Maxim-Integrated
