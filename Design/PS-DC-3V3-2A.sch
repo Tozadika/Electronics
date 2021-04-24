@@ -14,17 +14,13 @@ Comment3 "WIP"
 Comment4 "EN"
 $EndDescr
 Text Notes 950  1400 0    50   ~ 0
-Project : \n\nSimple board for electronic enthousiastic who are looking for compact, and powerfull module to power supply 3.3Vdc logic circuit.\n\nAll design is based on the Maxim Integrated MAX17643 synchronous sep-down DC-DC Converter with internal compensation.\n\nBasic technical data :\n\nInput voltage : 4.5V to 60 Vdc\nOutput voltage : 3.3 Vdc\nMaximum output current : 2A
+Project : \n\nSimple board for electronic enthousiastic who are looking for compact, and powerfull module to power supply 3.3Vdc logic circuit.\n\nAll design is based on the Maxim Integrated MAX17643 synchronous step-down DC-DC Converter with internal compensation.\n\nBasic technical data :\n\nInput voltage : 4.5V to 60 Vdc\nOutput voltage : 3.3 Vdc\nMaximum output current : 2A
 Wire Notes Line
 	11300 2150 800  2150
 Wire Notes Line
 	6150 400  6150 2150
 Wire Notes Line
 	950  600  1250 600 
-Text Notes 6200 600  0    50   ~ 0
-Block diagram :
-Wire Notes Line
-	6200 600  6750 600 
 $Comp
 L Maxim-Integrated:MAX17643 U1
 U 1 1 60756037
@@ -402,31 +398,18 @@ Connection ~ 4950 3650
 Wire Wire Line
 	4950 3650 5550 3650
 $Comp
-L power:GND #PWR0104
-U 1 1 607743E6
-P 7000 4550
-F 0 "#PWR0104" H 7000 4300 50  0001 C CNN
-F 1 "GND" H 7005 4377 50  0000 C CNN
-F 2 "" H 7000 4550 50  0001 C CNN
-F 3 "" H 7000 4550 50  0001 C CNN
-	1    7000 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 4500 7000 4500
-$Comp
 L Device:R R4
 U 1 1 60762930
-P 6800 4500
-F 0 "R4" V 6900 4500 50  0000 L CNN
-F 1 "40.2k" V 6900 4250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6730 4500 50  0001 C CNN
-F 3 "~" H 6800 4500 50  0001 C CNN
-F 4 "https://fr.farnell.com/panasonic/erj3ekf4022v/res-couche-epaisse-40-2k-1-0-1w/dp/2059463" H 6800 4500 50  0001 C CNN "Link"
-F 5 "ERJ3EKF4022V" H 6800 4500 50  0001 C CNN "MPN"
-F 6 "Panasonic" H 6800 4500 50  0001 C CNN "Manufacturer"
-F 7 "Résistance à puce CMS, Couche épaisse, 40.2 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Couche épaisse" H 6800 4500 50  0001 C CNN "Description"
-	1    6800 4500
+P 6900 4700
+F 0 "R4" V 7000 4750 50  0000 L CNN
+F 1 "10k" V 7000 4550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6830 4700 50  0001 C CNN
+F 3 "~" H 6900 4700 50  0001 C CNN
+F 4 "https://fr.farnell.com/panasonic/erj3ekf1002v/res-couche-epaisse-10k-1-0-1w/dp/2303192" H 6900 4700 50  0001 C CNN "Link"
+F 5 "ERJ3EKF1002V" H 6900 4700 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 6900 4700 50  0001 C CNN "Manufacturer"
+F 7 "Résistance à puce CMS, Couche épaisse, 10 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Couche épaisse" H 6900 4700 50  0001 C CNN "Description"
+	1    6900 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -455,14 +438,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 4100 6800 4100
 Wire Wire Line
-	6650 4250 6650 4500
-Connection ~ 6650 4500
-Wire Wire Line
-	7000 4550 7000 4500
-Text GLabel 6650 4600 3    50   Input ~ 0
+	7150 4650 7150 4700
+Text GLabel 6650 4800 3    50   Input ~ 0
 \Reset
-Wire Wire Line
-	6650 4500 6650 4600
 Wire Wire Line
 	4000 3800 5550 3800
 Wire Wire Line
@@ -519,4 +497,28 @@ Text Notes 5450 6750 0    100  ~ 0
 PS-DC-3V3-2A-V1.0
 Text Notes 9700 6750 0    100  ~ 0
 ToZaDiKa
+Text Notes 6200 600  0    50   ~ 0
+Comment / remarks
+Wire Notes Line
+	6200 600  6950 600 
+Wire Wire Line
+	6650 4700 6750 4700
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 6085D6C2
+P 7150 4650
+F 0 "#PWR0104" H 7150 4500 50  0001 C CNN
+F 1 "+3V3" H 7165 4823 50  0000 C CNN
+F 2 "" H 7150 4650 50  0001 C CNN
+F 3 "" H 7150 4650 50  0001 C CNN
+	1    7150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4700 7150 4700
+Wire Wire Line
+	6650 4250 6650 4700
+Connection ~ 6650 4700
+Wire Wire Line
+	6650 4700 6650 4800
 $EndSCHEMATC
