@@ -1,4 +1,4 @@
-### Module positions - created on 04/13/21 21:45:55 ###
+### Module positions - created on 04/24/21 13:45:35 ###
 ### Printed by Pcbnew version kicad (5.1.9)-1
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -12,6 +12,6 @@ L1        6.8u      L_Coilcraft_XAL5050-682                 153.6700   -97.7900 
 R1        40.2k     R_0603_1608Metric                       147.3200  -103.6320  270.0000  top
 R2        52.3k     R_0603_1608Metric                       155.7020  -101.6000  180.0000  top
 R3        19.6k     R_0603_1608Metric                       150.1140  -103.6320  270.0000  top
-R4        40.2k     R_0603_1608Metric                       156.4640  -104.1400   90.0000  top
+R4        10k       R_0603_1608Metric                       156.4640  -104.1400   90.0000  top
 U1        MAX17643  DFN-12-1EP_3x3mm_P0.5mm_EP2.05x2.86mm   148.5900  -100.0760    0.0000  top
 ## End
