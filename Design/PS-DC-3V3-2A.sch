@@ -61,21 +61,18 @@ $EndComp
 $Comp
 L power:VCC #PWR0103
 U 1 1 607584F0
-P 5350 3450
-F 0 "#PWR0103" H 5350 3300 50  0001 C CNN
-F 1 "VCC" H 5365 3623 50  0000 C CNN
-F 2 "" H 5350 3450 50  0001 C CNN
-F 3 "" H 5350 3450 50  0001 C CNN
-	1    5350 3450
+P 5000 3000
+F 0 "#PWR0103" H 5000 2850 50  0001 C CNN
+F 1 "VCC" H 5015 3173 50  0000 C CNN
+F 2 "" H 5000 3000 50  0001 C CNN
+F 3 "" H 5000 3000 50  0001 C CNN
+	1    5000 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5600 3500 5550 3500
 Wire Wire Line
-	5350 3500 5350 3450
-Connection ~ 5350 3500
-Wire Wire Line
-	5100 3500 5350 3500
+	5000 3050 5000 3000
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 6075ACBB
@@ -99,7 +96,7 @@ Wire Wire Line
 	1500 2700 1550 2700
 Text GLabel 1550 2700 2    50   Output ~ 0
 GND
-Text GLabel 3550 3250 0    50   Input ~ 0
+Text GLabel 4100 3050 0    50   Input ~ 0
 Vin
 Wire Wire Line
 	5600 3800 5550 3800
@@ -123,15 +120,6 @@ F 7 "Murata" H 6800 3650 50  0001 C CNN "Manufacturer"
 	1    6800 3650
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6700 3500 6700 3150
-Wire Wire Line
-	5550 3150 5550 3500
-Wire Wire Line
-	5550 3150 6700 3150
-Connection ~ 5550 3500
-Wire Wire Line
-	5550 3500 5350 3500
 Wire Wire Line
 	6950 3800 6950 3650
 Wire Wire Line
@@ -372,8 +360,7 @@ F 3 "" H 4900 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 4600 4000 3800
-Connection ~ 5550 3650
-Text GLabel 3550 3650 0    50   Input ~ 0
+Text GLabel 3900 3800 0    50   Input ~ 0
 GND
 Text Notes 900  2300 0    50   ~ 0
 Connectors
@@ -385,14 +372,6 @@ Wire Wire Line
 	6800 4350 7700 4350
 Wire Wire Line
 	6100 4450 6100 4600
-Wire Wire Line
-	5100 3500 5100 3450
-Wire Wire Line
-	5100 3450 4950 3450
-Connection ~ 4950 3450
-Connection ~ 4950 3650
-Wire Wire Line
-	4950 3650 5550 3650
 $Comp
 L Device:R R4
 U 1 1 60762930
@@ -411,16 +390,16 @@ $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 60779719
-P 4950 3550
-F 0 "C5" V 5179 3550 50  0000 C CNN
-F 1 "2.2u" V 5088 3550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 4950 3550 50  0001 C CNN
-F 3 "~" H 4950 3550 50  0001 C CNN
-F 4 "Condensateur céramique multicouche CMS, 2.2 µF, 100 V, 1210 [3225 Metric], ± 10%, X7R" H 4950 3550 50  0001 C CNN "Description"
-F 5 "https://fr.farnell.com/kemet/c1210c225k1ractu/cond-2-2-f-100v-10-x7r-1210/dp/1793832" H 4950 3550 50  0001 C CNN "Link"
-F 6 "C1210C225K1RACTU" H 4950 3550 50  0001 C CNN "MPN"
-F 7 "Kemet" H 4950 3550 50  0001 C CNN "Manufacturer"
-	1    4950 3550
+P 5300 3500
+F 0 "C5" V 5529 3500 50  0000 C CNN
+F 1 "2.2u" V 5438 3500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5300 3500 50  0001 C CNN
+F 3 "~" H 5300 3500 50  0001 C CNN
+F 4 "Condensateur céramique multicouche CMS, 2.2 µF, 100 V, 1210 [3225 Metric], ± 10%, X7R" H 5300 3500 50  0001 C CNN "Description"
+F 5 "https://fr.farnell.com/kemet/c1210c225k1ractu/cond-2-2-f-100v-10-x7r-1210/dp/1793832" H 5300 3500 50  0001 C CNN "Link"
+F 6 "C1210C225K1RACTU" H 5300 3500 50  0001 C CNN "MPN"
+F 7 "Kemet" H 5300 3500 50  0001 C CNN "Manufacturer"
+	1    5300 3500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -438,7 +417,7 @@ Wire Wire Line
 Text GLabel 6650 4800 3    50   Input ~ 0
 \Reset
 Wire Wire Line
-	4000 3800 5550 3800
+	4000 3800 4450 3800
 Wire Wire Line
 	4500 4100 4250 4100
 Connection ~ 4500 4100
@@ -520,46 +499,82 @@ Wire Wire Line
 $Comp
 L Device:Q_PMOS_DGS Q?
 U 1 1 608590CA
-P 3900 3350
-F 0 "Q?" V 4242 3350 50  0000 C CNN
-F 1 "Q_PMOS_DGS" V 4151 3350 50  0000 C CNN
-F 2 "" H 4100 3450 50  0001 C CNN
-F 3 "~" H 3900 3350 50  0001 C CNN
-	1    3900 3350
+P 4450 3150
+F 0 "Q?" V 4792 3150 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 4701 3150 50  0000 C CNN
+F 2 "" H 4650 3250 50  0001 C CNN
+F 3 "~" H 4450 3150 50  0001 C CNN
+	1    4450 3150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:D_Zener D?
 U 1 1 60859B22
-P 4200 3450
-F 0 "D?" V 4246 3370 50  0000 R CNN
-F 1 "D_Zener" V 4155 3370 50  0000 R CNN
-F 2 "" H 4200 3450 50  0001 C CNN
-F 3 "~" H 4200 3450 50  0001 C CNN
-	1    4200 3450
-	0    -1   -1   0   
+P 4750 3250
+F 0 "D?" V 4800 3500 50  0000 R CNN
+F 1 "D_Zener" V 4700 3650 50  0000 R CNN
+F 2 "" H 4750 3250 50  0001 C CNN
+F 3 "~" H 4750 3250 50  0001 C CNN
+	1    4750 3250
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4100 3250 4200 3250
+	4650 3050 4750 3050
 Wire Wire Line
-	4200 3300 4200 3250
-Connection ~ 4200 3250
+	4750 3100 4750 3050
+Connection ~ 4750 3050
 Wire Wire Line
-	4200 3600 4200 3650
+	4250 3050 4100 3050
 Wire Wire Line
-	4200 3650 3900 3650
+	4750 3050 5000 3050
+$Comp
+L Device:R R?
+U 1 1 608629EB
+P 4450 3600
+F 0 "R?" H 4520 3646 50  0000 L CNN
+F 1 "40.2k" H 4520 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 3600 50  0001 C CNN
+F 3 "~" H 4450 3600 50  0001 C CNN
+F 4 "https://fr.farnell.com/panasonic/erj3ekf4022v/res-couche-epaisse-40-2k-1-0-1w/dp/2059463" H 4450 3600 50  0001 C CNN "Link"
+F 5 "ERJ3EKF4022V" H 4450 3600 50  0001 C CNN "MPN"
+F 6 "Panasonic" H 4450 3600 50  0001 C CNN "Manufacturer"
+F 7 "Résistance à puce CMS, Couche épaisse, 40.2 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Couche épaisse" H 4450 3600 50  0001 C CNN "Description"
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3900 3550 3900 3650
-Connection ~ 3900 3650
+	4450 3400 4750 3400
 Wire Wire Line
-	3900 3650 3550 3650
+	4450 3350 4450 3400
+Connection ~ 4450 3400
 Wire Wire Line
-	3700 3250 3550 3250
-Connection ~ 4200 3650
+	4450 3400 4450 3450
 Wire Wire Line
-	4950 3450 4950 3250
+	4450 3750 4450 3800
 Wire Wire Line
-	4200 3250 4950 3250
+	5300 3400 5300 3050
 Wire Wire Line
-	4200 3650 4950 3650
+	5300 3800 5300 3600
+Connection ~ 5000 3050
+Wire Wire Line
+	5000 3050 5300 3050
+Wire Wire Line
+	5300 3050 5550 3050
+Connection ~ 5300 3050
+Connection ~ 4450 3800
+Wire Wire Line
+	4450 3800 5300 3800
+Connection ~ 5300 3800
+Wire Wire Line
+	5300 3800 5550 3800
+Connection ~ 5550 3050
+Wire Wire Line
+	5550 3050 5550 3500
+Wire Wire Line
+	4000 3800 3900 3800
+Connection ~ 4000 3800
+Wire Wire Line
+	5550 3050 6700 3050
+Wire Wire Line
+	6700 3050 6700 3500
 $EndSCHEMATC
