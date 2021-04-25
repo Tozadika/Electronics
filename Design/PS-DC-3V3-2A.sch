@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "PS-DC-3V3-2A"
 Date "2021-04-13"
-Rev "V1.0"
+Rev "V2.0"
 Comp "ToZaDiKa"
 Comment1 ""
 Comment2 ""
@@ -246,10 +246,8 @@ Wire Wire Line
 Connection ~ 7700 3800
 Wire Wire Line
 	7700 3800 7700 3750
-Text GLabel 7750 3800 2    50   Output ~ 0
+Text GLabel 8500 3800 2    50   Output ~ 0
 Vout
-Wire Wire Line
-	7700 3800 7750 3800
 $Comp
 L power:GND #PWR0107
 U 1 1 60773577
@@ -521,4 +519,56 @@ Wire Wire Line
 Connection ~ 6650 4700
 Wire Wire Line
 	6650 4700 6650 4800
+$Comp
+L Device:LED D1
+U 1 1 60858E17
+P 8300 4600
+F 0 "D1" V 8339 4482 50  0000 R CNN
+F 1 "LED_Green" V 8248 4482 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8300 4600 50  0001 C CNN
+F 3 "~" H 8300 4600 50  0001 C CNN
+F 4 "https://fr.farnell.com/vcc-visual-communications-company/lsm0603453v/led-green-120mcd-590nm-smd/dp/2960514" V 8300 4600 50  0001 C CNN "Link"
+F 5 "VCC" V 8300 4600 50  0001 C CNN "Manufacturer"
+F 6 "LSM0603453V" V 8300 4600 50  0001 C CNN "MPN"
+F 7 "LED, GREEN, 120MCD, 590NM, SMD" V 8300 4600 50  0001 C CNN "Description"
+	1    8300 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6085B7AD
+P 8300 4100
+F 0 "R5" H 8370 4146 50  0000 L CNN
+F 1 "65R" H 8370 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8230 4100 50  0001 C CNN
+F 3 "~" H 8300 4100 50  0001 C CNN
+F 4 "Résistance à puce CMS, 65.7 ohm, ± 0.5%, 100 mW, 0603 [1608 Metric]" H 8300 4100 50  0001 C CNN "Description"
+F 5 "RN73R1JTTD65R7D25" H 8300 4100 50  0001 C CNN "MPN"
+F 6 "KOA" H 8300 4100 50  0001 C CNN "Manufacturer"
+F 7 "https://fr.farnell.com/koa-speer-electronics/rn73r1jttd65r7d25/res-65r7-0-5-0-1w-0603/dp/3544935" H 8300 4100 50  0001 C CNN "Link"
+	1    8300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4450 8300 4250
+$Comp
+L power:GND #PWR0112
+U 1 1 60860D74
+P 8300 4800
+F 0 "#PWR0112" H 8300 4550 50  0001 C CNN
+F 1 "GND" H 8305 4627 50  0000 C CNN
+F 2 "" H 8300 4800 50  0001 C CNN
+F 3 "" H 8300 4800 50  0001 C CNN
+	1    8300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4800 8300 4750
+Wire Wire Line
+	7700 3800 8300 3800
+Wire Wire Line
+	8300 3950 8300 3800
+Connection ~ 8300 3800
+Wire Wire Line
+	8300 3800 8500 3800
 $EndSCHEMATC
