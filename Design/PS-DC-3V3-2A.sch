@@ -99,7 +99,7 @@ Wire Wire Line
 	1500 2700 1550 2700
 Text GLabel 1550 2700 2    50   Output ~ 0
 GND
-Text GLabel 4600 3450 0    50   Input ~ 0
+Text GLabel 3550 3250 0    50   Input ~ 0
 Vin
 Wire Wire Line
 	5600 3800 5550 3800
@@ -373,7 +373,7 @@ $EndComp
 Wire Wire Line
 	4000 4600 4000 3800
 Connection ~ 5550 3650
-Text GLabel 4600 3650 0    50   Input ~ 0
+Text GLabel 3550 3650 0    50   Input ~ 0
 GND
 Text Notes 900  2300 0    50   ~ 0
 Connectors
@@ -390,10 +390,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 3450 4950 3450
 Connection ~ 4950 3450
-Wire Wire Line
-	4950 3450 4600 3450
-Wire Wire Line
-	4600 3650 4950 3650
 Connection ~ 4950 3650
 Wire Wire Line
 	4950 3650 5550 3650
@@ -521,4 +517,49 @@ Wire Wire Line
 Connection ~ 6650 4700
 Wire Wire Line
 	6650 4700 6650 4800
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 608590CA
+P 3900 3350
+F 0 "Q?" V 4242 3350 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 4151 3350 50  0000 C CNN
+F 2 "" H 4100 3450 50  0001 C CNN
+F 3 "~" H 3900 3350 50  0001 C CNN
+	1    3900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 60859B22
+P 4200 3450
+F 0 "D?" V 4246 3370 50  0000 R CNN
+F 1 "D_Zener" V 4155 3370 50  0000 R CNN
+F 2 "" H 4200 3450 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 3250 4200 3250
+Wire Wire Line
+	4200 3300 4200 3250
+Connection ~ 4200 3250
+Wire Wire Line
+	4200 3600 4200 3650
+Wire Wire Line
+	4200 3650 3900 3650
+Wire Wire Line
+	3900 3550 3900 3650
+Connection ~ 3900 3650
+Wire Wire Line
+	3900 3650 3550 3650
+Wire Wire Line
+	3700 3250 3550 3250
+Connection ~ 4200 3650
+Wire Wire Line
+	4950 3450 4950 3250
+Wire Wire Line
+	4200 3250 4950 3250
+Wire Wire Line
+	4200 3650 4950 3650
 $EndSCHEMATC
